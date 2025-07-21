@@ -53,7 +53,7 @@ export default function Home() {
       const blob = new Blob(
         [
           XLSX.write(wb, {
-            bookType: ext as any,
+            bookType: ext as XLSX.BookType,
             type: "array",
           }),
         ],
